@@ -16,6 +16,8 @@ spring:
   config:
     import:
     - configserver:http://localhost:8085
+  zipkin:
+    base-url: http://localhost:9411/
    
 #eureka:
 #  instance:
@@ -23,4 +25,11 @@ spring:
 #  client:
 #    fetch-registry: true
 #    register-with-eureka: true
+
+# Okta cinfig
+
+okta:
+  oauth2:
+    issuer: https://dev-66693851.okta.com/oauth2/default
+    audience: api://default
     
